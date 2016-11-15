@@ -8,4 +8,10 @@ public class JsonTools {
     public static String quote(String string) {
         return "\"" + string +"\"";
     }
+
+    public static String buildValueJson(String string){
+        return "{" +
+                 quote("value") + colon() + quote(string) +
+                "}";
+    }
 }
